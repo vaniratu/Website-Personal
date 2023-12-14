@@ -1,0 +1,67 @@
+#halaman {
+    width: 800px;
+    margin: auto;
+}
+
+nav {
+    background-color: rgb(209, 145, 145);
+    display: inline-block;
+    width: 100%;
+}
+
+nav ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+nav ul li {
+    float: left;
+    background-color: rgb(209, 145, 145);
+}
+
+nav a {
+    display: block;
+    padding: 0 10px;
+    color: white;
+    line-height: 60px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: rgb(120, 106, 106);
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 170px;
+}
+
+li > a::after {content:'+';}
+li > a:only-child::after{
+    content: '';
+}
+
+
+
+
+
